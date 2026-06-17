@@ -1,6 +1,5 @@
 def get_reply(message):
     message = message.lower().strip()
-
     if message in ["hello", "hi", "hey"]:
         return "Hi! How can I help you?"
     elif message in ["how are you", "how are you?"]:
@@ -15,10 +14,8 @@ def get_reply(message):
         return "Goodbye!"
     else:
         return "Sorry, I do not understand that."
-
 print("Basic Chatbot")
 print("You can type hello, how are you, what is your name, thanks, or bye.")
-
 while True:
     user_message = input("\nYou: ")
     bot_reply = get_reply(user_message)
